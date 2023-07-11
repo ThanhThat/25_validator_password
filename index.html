@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>25 Validator Password</title>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <form action="" id="form">
+      <div class="form-control">
+        <div class="password-wrap">
+          <input type="text" name="password" id="password" />
+          <span class="show-password" data-state="show">
+            <i class="fa-solid fa-eye-slash"></i>
+          </span>
+        </div>
+        <button class="btn-submit" type="submit">Submit</button>
+      </div>
+
+      <ul class="condition">
+        <!-- <i class="fa-solid fa-check"></i> -->
+        <li class="lower-case">
+          <span class="icon" data-state="x">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          <span class="text">Lower-case</span>
+        </li>
+        <li class="upper-case">
+          <span class="icon">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          <span class="text">Upper-case</span>
+        </li>
+        <li class="number">
+          <span class="icon">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          <span class="text">Number</span>
+        </li>
+        <li class="symbol">
+          <span class="icon">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+          <span class="text"> At least one special symbol </span>
+        </li>
+        <li class="char-length">
+          <span class="icon"><i class="fa-solid fa-xmark"></i></span>
+          <span class="text">At least 8 character</span>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
